@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form class="registration-form">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="email-error" style="color: red; display: none; margin-left: 10px;"></span>
+        </div>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <span id="name-error" style="color: red; display: none; margin-left: 10px;"></span>
+        </div>
+        
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" onblur="validatePhone()">
+        <span id="phone-error" style="color: red; display: none; margin-left: 10px;"></span>
+        <br><br>
+
+        <div class="form-group">
+            <label for="eventDate">Select Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+            <span id="date-error" style="color: red; display: none; margin-left: 10px;"></span>
+        </div>
+        <br>
+
+        <label for="eventType">Select Event:</label>
+        <select id="eventType" name="eventType" onchange="showFee()">
+            <option value="">Select</option>
+            <option value="100">Music Festival</option>
+            <option value="150">Food Carnival</option>
+            <option value="200">Art Workshop</option>
+        </select>
+        <span id="event-error" style="color: red; display: none; margin-left: 10px;"></span>
+        <br><br>
+
+        <p id="fee"></p>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" onkeyup="countCharacters()"></textarea>
+        <br><br>
+
+        <button type="submit" id="registerBtn">
+            Register
+        </button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

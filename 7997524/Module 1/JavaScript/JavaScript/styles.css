@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:white;
+    background-image:url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+
+}
+/*styling for the heading*/
+h1{
+    color:red;
+    padding:30px;
+    border:2px solid powderblue;
+    background-color:powderblue;
+    text-align:center;
+}
+p{
+    color:black;
+    padding:20px;
+    text-align:center;
+    font-weight:bold;
+}
+/* Multi Column News Section */
+
+.news{
+    column-count:2;
+    column-gap:30px;
+    column-rule:1px solid gray;
+}
+h2{
+    color:blue;
+    text-align:center;
+    font-weight:bold;
+    /*background-color:white;*/
+   
+    
+}
+/*styling for list of events*/
+ul{
+    color:black;
+    padding:20px;
+    text-align:center;
+    font-weight:bold;
+    
+}
+/* Registration Form Styling */
+.registration-form{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+/* Form Group Styling */
+.form-group{
+    margin-bottom: 15px;
+}
+
+/* Label Styling */
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Field Styling */
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Input Focus Effect */
+input:focus{
+    outline: 2px solid #007BFF;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px){
+
+    .registration-form{
+        width: 90%;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+}
+events{
+    background-color:white;
+}

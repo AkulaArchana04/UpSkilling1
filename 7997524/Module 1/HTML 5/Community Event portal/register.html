@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="register.html">Register</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<h2>Registration Form</h2>
+
+<form>
+
+<label>Name:</label>
+<input type="text" required autofocus>
+
+<label>Email:</label>
+<input type="email" required><br>
+
+<label>Phone:</label>
+<input type="text" id="phone"
+onblur="validatePhone()"><br>
+
+<label>Select Event:</label>
+
+<select id="eventType" onchange="showFee()"><br>
+
+<option value="">Select</option>
+<option value="100">Music Festival</option>
+<option value="150">Food Carnival</option>
+<option value="200">Art Workshop</option>
+
+</select>
+
+<p id="fee"></p>
+
+<label>Message:</label>
+
+<textarea id="message"
+onkeyup="countCharacters()"></textarea>
+
+<p id="charCount">Characters: 0</p>
+
+<button type="button"
+onclick="submitForm()">
+
+Register
+
+</button>
+
+</form>
+
+</body>
+</html>
